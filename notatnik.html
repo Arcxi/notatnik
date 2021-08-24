@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+<head>
+	<meta charset="utf-8">
+	<title>notatnik</title>
+	<link rel="stylesheet" href="notatnik.css">
+	
+</head>
+<body>
+  <div id="wrapper">
+    <div id="note-editor">
+      <h2 id="note-editor-title">Stwórz notatke</h2>
+      <label>Tytuł:</label>
+      <input type="text" id="title" name="title" />
+      <label>Treść:</label>
+      <textarea rows="10" cols="42" id="message" name="message"></textarea>
+      <label>Wybierz kolor:</label>
+      <select id="color" name="color">
+        <option value="red" selected>Czerwony</option>
+        <option value="yellow">Żółty</option>
+        <option value="blue">Niebieski</option>
+      </select>
+      <div id="button">
+        <button id="add-btn">Utwórz</button>
+        <div id="error"></div>
+      </div>
+    </div>
+
+    <div id="notes-section">
+      <h2>Notatki</h2>
+      <ul id="notes"></ul>
+    </div>
+  </div>
+  <script type="text/javascript" src="notatnik.js"></script>
+</body>
+</html>
